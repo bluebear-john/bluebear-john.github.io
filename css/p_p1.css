@@ -1,0 +1,333 @@
+@charset 'utf-8';
+
+.p_wrap {
+	width: 100%;
+	height: auto;
+	background-color: #d3d3d3;
+	padding: 77px 0px 15px 0;
+}
+
+#nnavbar {
+	width: 100%;
+
+	background-color: rgba(255, 254, 254, 0.90);
+	left: 50%;
+	transform: translateX(-50%);
+	transition: all 0.5s;
+	height: 65px;
+	box-shadow: 1px 1px 5px rgba(85, 85, 85, 0.74);
+
+}
+
+.nnav {
+	position: fixed;
+	top: 0px;
+	z-index: 100;
+}
+
+#nnavbar .nnav_center {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 90%;
+	max-width: 500px;
+}
+
+
+
+#nnavbar a {
+	width: 25%;
+	float: left;
+	display: block;
+	color: #2c2e65;
+	padding: 25px 0px;
+
+	text-align: center;
+	text-decoration: none;
+	font-size: 14px;
+	font-family: 'Noto Sans KR';
+}
+
+#nnavbar a:hover {
+	color: #000000;
+}
+
+#nnavbar a.active {
+	border-bottom: 5px solid #2c2e65;
+
+
+}
+
+.sticky {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	max-width: 100%;
+}
+
+footer {
+	width: 100%;
+	height: auto;
+	padding: 30px 0;
+	background-color: #465164;
+}
+
+.footer_wrap {
+	width: 98%;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.f_sec {
+	width: 80%;
+	color: #fff;
+	text-align: center;
+	font-size: 12px;
+	padding: 30px 0;
+	font-family: 'Noto Sans KR';
+	margin: 0 auto;
+	letter-spacing: 0px;
+}
+
+.f_sec.b {
+	border-top: 1px solid rgba(255, 255, 255, 0.24);
+}
+.pg_info {
+	width: 98%;
+	height: auto;
+	background-color: #fff;
+	margin: 0 auto;
+	padding: 20px 0 ;
+	box-shadow: 1px 0px 5px rgba(59, 59, 59, 0.3);
+}
+
+.pg_info p {
+	width: 90%;
+	margin: 0 auto;
+	text-align: center;
+	font-size: 12px;
+	font-family: 'Noto Sans KR';
+	color: #555;
+	line-height: 18px;
+	
+}
+
+.portfolio_box {
+	width: 98%;
+	height: auto;
+	background-color: #fff;
+	margin: 0 auto;
+	
+	box-shadow: 1px 0px 5px rgba(59, 59, 59, 0.3);
+	padding: 20px 0 0 0;
+}
+.imgwrap{
+	width: 100%;
+	height: auto;
+	
+}
+.responsive {
+    width:96%;
+    max-width:1920px;
+    height: auto;
+	margin: 0 auto;
+	
+}
+
+
+.portfolio_box h3{
+	
+	font-size: 18px;
+	font-family: 'Noto Sans KR';
+	color: #555;
+	border-left: 3px solid #3274f0;
+	text-indent: 10px;
+	margin-left: 20px;
+	
+}
+.page_ex ul{
+	width: 98%;
+	position: relative;
+	margin: 0 auto;
+	margin-top: 40px;
+}
+.page_ex ul li:nth-child(1){
+	margin-right: 1%;
+}
+
+
+.page_ex ul li{
+	
+	height: auto;
+	background-color: #fff;
+	margin: 0 auto;
+	margin-top: 10px;
+	
+}
+
+.page_ex ul li:nth-child(1) p{
+	font-size: 14px;
+	font-family: 'Noto Sans KR';
+	color: #555;
+		border-left: 3px solid #3274f0;
+	text-indent: 10px;
+	margin-left: 20px;
+}
+.page_ex ul li:nth-child(1) .colorwrap{
+	width: 90%;
+	margin: 0 auto;
+	margin-top: 30px;
+}
+.page_ex ul li:nth-child(1) .colorwrap .colors{
+	width: 33.33333%;
+	height: 80px;
+	float: left;
+	border:10px solid #ffffff;
+	box-sizing: border-box;
+	
+}
+.page_ex ul li.col-3.a .colorwrap .colors{
+	width: 50%;
+	height: 80px;
+	float: left;
+	border:10px solid #ffffff;
+	box-sizing: border-box;
+	
+}
+.page_ex .center{text-align: center;color: #555;padding: 0px 0 30px}
+.colors:nth-child(1){
+	background-color: #0f58a6;
+}
+
+.colors:nth-child(2){
+	background-color: #eef2f5;
+}
+.colors:nth-child(3){
+	background-color: #ff8700;
+}
+.colorwrap.moo .colors:nth-child(1){
+	background-color: #3274f0;
+}
+
+.colorwrap.moo .colors:nth-child(2){
+	background-color: #eef2f5;
+}
+.colorwrap.moo .colors:nth-child(3){
+	background-color: #555;
+}
+.colorwrap.dog .colors:nth-child(1){
+	background-color: #f8cf68;
+}
+
+.colorwrap.dog .colors:nth-child(2){
+	background-color: #f6f6f6;
+}
+.colorwrap.dog .colors:nth-child(3){
+	background-color: #555;
+}
+.page_ex ul li.col-29{
+	width: 75%;
+	
+	padding: 30px 0;
+}
+
+.page_ex ul li:nth-child(2) p{
+	width: 90%;
+	font-size: 14px;
+	font-family: 'Noto Sans KR';
+	color: #555;
+	line-height: 20px;
+	text-align: center;
+	margin: 0 auto;
+}
+
+.port_btn{
+	width: 200px;
+	height: 30px;
+	background-color: #3274f0;
+	text-align: center;
+	position: absolute;
+	right: 4%;
+	transition: all 1s;
+}
+.portfolio_box.a{position: relative}
+.btnwrap.a .port_btn{position: absolute;bottom:20px}
+.port_btn:hover{
+	background-color: #616064;
+}
+.port_btn>a{
+	color: #fff;
+	font-size: 14px;
+	font-family: 'Noto Sans KR';
+	line-height: 30px;
+	
+}
+.container{width:100%;height:auto;}
+.top_con_wrap{width:100%;height:400px;background:url("../img/bg_p.png")no-repeat 50%;background-size: cover}
+.top_con_wrap .top_con{width: 96%;max-width: 1200px;padding-top: 200px;margin: auto;text-align: center;font-family: 'Noto Sans KR';}
+.top_con .con_text1{font-size: 36px;color: #ffffff;font-weight: 500;line-height: 45px}
+.top_con .con_text2{font-size: 16px;color: #ffffff;font-weight: 500;line-height: 45px;font-weight: 400}
+.contents{width:96%;max-width:1200px;height: 50px;position: relative;margin: auto;}
+.contents .c_icon{width: 90%;height:auto;max-width:150px ;padding: 30px 0;margin: auto;} 
+.contents .c_icon ul{position: absolute;right:2%;}
+.contents  p{position: absolute;top:47px; left:2.5%;color: #555;font-size:14px;letter-spacing: -0.5px}
+.contents .c_icon ul>li{float: left;padding:0px 5px;text-align: center}
+.contents .c_icon ul>li i{font-size: 40px;color: #414141;transition:all 1s}
+.contents .c_icon ul>li i:hover{color:#3274f0}
+
+@media (max-width:768px){
+.page_ex ul li.col-29{
+		width: 98%;
+		margin: 0 auto;
+	}
+}
+
+@media (max-width:557px){
+	.port_btn{
+	width: 94%;
+	height: 30px;
+	background-color: #3274f0;
+	text-align: center;
+	position: absolute;
+	right: 3%;
+}
+	
+.pg_info {
+	width: 96%;
+	height: auto;
+	background-color: #fff;
+	margin: 0 auto;
+	padding: 20px 0 ;
+	box-shadow: 1px 0px 5px rgba(59, 59, 59, 0.3);
+}
+
+.pg_info p {
+	width:90%;
+	margin: 0 auto;
+	text-align: center;
+	font-size: 11px;
+	font-family: 'Noto Sans KR';
+	color: #555;
+	line-height: 18px;
+	letter-spacing: -1px;
+	
+}
+
+.portfolio_box {
+	width: 96%;
+	height: auto;
+	background-color: #fff;
+	margin: 0 auto;
+	margin-top:-5px;
+	box-shadow: 1px 0px 5px rgba(59, 59, 59, 0.3);
+	padding: 20px 0 0 0;
+}
+}
+@media (max-width:409px){
+.contents .c_icon{max-width: 133px}
+.contents .c_icon ul{position: relative}
+.contents{height: 80px;}
+.contents  p{position: static;margin-top:-18px;text-align: center;}
+.top_con .con_text2{font-size: 14px;}
+
+}

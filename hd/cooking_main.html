@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>main</title>
+    <link rel="stylesheet" href="css/main_cooking.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="headerfooter/css/headerfooter.css">
+<!--    <link rel="import" href="headerfooter/headerfooter.html">-->
+</head>
+<body>
+    <div id="wrap">
+        
+        
+    <div class="header">
+        <div class="nav">
+            <div class="top_nav">
+                <div class="logo"></div>
+                <div class="search">
+                    <p>현대카드 라이브러리의 도서/음반을 검색해 보세요.</p>
+                </div>
+                <div class="cate">
+                    <a class="myBtn" id="loginBtn" href="#">로그인</a>
+                </div>
+            </div>
+            <div class="bottom_nav">
+                <ul>
+                    <li><a href="index.html">HOME</a>
+
+                    </li>
+                    <li><a href="#">DESIGN LIBRARY</a>
+                        <ul class="dropmenu">
+                            <li><a href="design_main.html">DESIGN LIBRARY</a></li>
+                            <li><a href="design_about.html">ABOUT</a></li>
+                            <li><a href="design_books.html">BOOKS</a></li>
+                            <li><a href="design_highlightspot.html">HIGHLIGHT SPOT</a></li>
+                            <li><a href="design_program.html">PROGRAM</a></li>
+                            <li><a href="design_visit.html">VISIT</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">TRAVEL LIBRARY</a>
+                        <ul class="dropmenu">
+                            <li><a href="travel_main.html">TRAVEL LIBRARY</a></li>
+                            <li><a href="travel_about.html">ABOUT</a></li>
+                            <li><a href="design_books.html">BOOKS</a></li>
+                            <li><a href="travel_highlightspot.html">HIGHLIGHT SPOT</a></li>
+                            <li><a href="travel_program.html">PROGRAM</a></li>
+                            <li><a href="travel_visit.html">VISIT</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">MUSIC LIBRARY</a>
+                        <ul class="dropmenu">
+                            <li><a href="music_main.html">MUSIC LIBRARY</a></li>
+                            <li><a href="music_about.html">ABOUT</a></li>
+                            <li><a href="design_books.html">BOOKS</a></li>
+                            <li><a href="music_highlightspot.html">HIGHLIGHT SPOT</a></li>
+                            <li><a href="music_program.html">PROGRAM</a></li>
+                            <li><a href="music_visit.html">VISIT</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">COOKING LIBRARY</a>
+                        <ul class="dropmenu">
+                            <li><a href="cooking_main.html">COOKING LIBRARY</a></li>
+                            <li><a href="cooking_about.html">ABOUT</a></li>
+                            <li><a href="design_books.html">BOOKS</a></li>
+                            <li><a href="cooking_highlightspot.html">HIGHLIGHT SPOT</a></li>
+                            <li><a href="cooking_program.html">PROGRAM</a></li>
+                            <li><a href="cooking_visit.html">VISIT</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="modal_login">
+        <div class="modal_box login">
+            <div class="modal_content">
+                <span class="close_btn_login">
+                      <span class="x_line1"></span>
+                <span class="x_line2"></span>
+                </span>
+                <h2>Log in</h2>
+                <form action="http://ffe400.com/hd/POST" class="logIn">
+                    <label for="userId">아이디</label>
+                    <input type="text" name="userId"><br>
+                    <label for="userPw">패스워드</label>
+                    <input type="password" name="userPw"><br>
+                    <div class="bottom_input">
+                        <input type="checkbox" name="idSave">아이디 저장
+
+                        <a href="#">아이디 찾기 / 비밀번호 찾기</a><br> </div>
+                    <input type="submit" value="로그인"><br>
+
+
+
+                </form>
+                <div class="modal_line"></div>
+                <div class="resister">
+                    <p><strong>현대카드 LIBRARY에 처음오셨나요?</strong> <br>회원가입을 하셔야 서비스 이용이 가능 합니다.</p>
+                    <a href="#" class="resister_btn" id="regiBtn">회원가입</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="modal_register">
+        <div class="modal_box register">
+            <div class="modal_content">
+                <span class="close_btn_regi">
+                      <span class="x_line1"></span>
+                <span class="x_line2"></span>
+                </span>
+                <h2>Register</h2>
+                <form action="http://ffe400.com/hd/joinOk.php" method="get" class="logIn" name="joinFrom">
+                    <label for="userId">아이디</label>
+                    <input type="text" name="userId"><br>
+                    <label for="userPw">패스워드</label>
+                    <input type="password" name="userPw" minlength="4" maxlength="8"><br>
+                    <label for="userPwChecked">패스워드<br>재확인</label>
+                    <input type="password" name="userPwChecked" minlength="4" maxlength="8"><br>
+                    <div class="txt"></div><br>
+                    <div class="modal_line"></div>
+                    <label for="userName">이름</label>
+                    <input type="text" name="userName"><br>
+                    <label for="userGender">성별</label>
+                    <input type="radio" name="userGender" value="man" checked> 남
+                    <input type="radio" name="userGender" value="woman"> 여<br>
+
+                    <label for="userMail">이메일</label>
+                    <input type="text" name="userMail"><br>
+                    <label for="userBirth">생년월일</label>
+                    <select name="userYear">
+                            <option value="default">-----</option>
+                        </select> 년
+                    <select name="userMonth">
+                            <option value="default">--</option>
+                        </select> 월
+                    <select name="userDate">
+                            <option value="default">--</option>
+                        </select> 일
+                    <br>
+                    <div class="modal_line"></div>
+                    <label for="userPhone[]">전화번호</label>010 -
+                    <input type="text" name="userPhone"> -
+                    <input type="text" name="userPhone">
+                    <br><br>
+
+                    <input type="button" id="submitBtn" value="회원가입"><br>
+
+
+
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+		<script>
+			var submitBtn=document.getElementById('submitBtn');
+			var joinFrom=document.getElementsByName('joinFrom')[0];
+			
+			
+			submitBtn.addEventListener('click',formSubmit);
+			
+			
+			function formSubmit(){
+				console.log(joinFrom.userName.value);
+				
+				var userNameVal=joinFrom.userName.value;
+				var userIdVal=joinFrom.userId.value;
+				var userPwVal=joinFrom.userPw.value;
+				var userPwValChVal=joinFrom.userPwChecked.value;
+				var spanTxt=document.getElementsByClassName('txt')[0];
+				
+				if(userNameVal=="" || userNameVal==null){
+					
+					alert("이름 입력 오류입니다");
+					joinFrom.userName.focus();
+					
+					return;
+				}
+				
+				
+				if(userIdVal=="" || userIdVal==null){
+					
+					alert("아이디 입력 오류입니다");
+					joinFrom.userId.focus();
+					
+					return;
+				}
+				
+				if(userPwVal=="" || userPwVal==null){
+						
+					alert("비빌번호 입력 오류입니다");
+					joinFrom.userPw.focus();
+					
+					return;
+				}
+				
+				
+				
+				alert('회원가입이 완료되었습니다!');// 서버에 전송
+				modalRegi.style.display = "none";
+				
+			}
+			
+				
+			var pwKey=joinFrom.userPwChecked;
+
+			pwKey.addEventListener('keyup',userPwKeyUp)
+
+				function userPwKeyUp(){
+					
+					var userPwVal=joinFrom.userPw.value;
+				    var userPwValChVal=joinFrom.userPwChecked.value;
+					var spanTxt=document.getElementsByClassName('txt')[0];
+					
+					if(userPwVal==userPwValChVal){
+						spanTxt.style.color="#00f";
+						spanTxt.textContent="비밀번호가 맞습니다";
+
+					}else{
+						spanTxt.style.color="#f00";
+						spanTxt.textContent="비밀번호가 틀립니다";
+
+					}
+				}
+			
+			
+			
+//				
+//				if(userPwValChVal==userPwVal){
+//					spanTxt.textContent="비빌번호가 맞습니다"
+//				}
+				
+				
+				
+				
+//				if(joinFrom.day1[0].checked == false && joinFrom.day1[1].checked == false ){
+//					
+//					alert("생년월일 체크오류");
+//					joinFrom.day1[0].focus();
+//					
+//					return;
+//				}
+//				
+				
+				
+//			}
+			
+			
+			
+		
+		
+		
+		</script>
+			
+      <div class="nav2">
+         <div class="navOverlap">
+          <div class="contentNav">
+              <h1 class="navTop">
+                  <p class="p1">현대카드</p>
+                <p class="p2">  COOKING <br>
+                  LIBRARY</p>
+              </h1>
+              <div class="navMiddle">
+                <p class="navMT">
+                    채움의 시간 + 영감의 공간
+                </p>  
+                <p class="navMU">
+                    먹거리에 대한 말들이 넘쳐나는 요즘이지만 미식을 깊게 다루는 이야기는 여전히 부족하다<br> 그래서 현대카드는 맛을 경험하는 다양한 방법을 제안하면서 새롭고 흥미로운 대화에 불을 지피고자 쿠킹 라이브러리를 선보인다.
+                </p>
+              </div>
+              <div class="navUnder">
+                  <span class="box1"> 더 알아보기 ></span>
+                  <span class="box2">360 VR 둘러보기  ></span>
+              </div> 
+              </div>        
+          </div>
+      </div>
+      <div class="section sec1">
+          <div class="TopTxt">
+              <h1>HIGHLIGHT SPOT</h1>
+              <h2>놓치지 말아야 할 곳</h2>
+          </div>
+          <div class="center gallery sec1gall">
+             <div class="media">
+             <ul class="gallMedia">
+                 <li></li>
+<!--
+                 <li></li>
+                 <li></li>
+                 <li></li>
+                 <li></li>
+-->
+            <div class="center menu">
+                      <ul>
+                          <li>1</li>
+                          <li>2</li>
+                          <li>3</li>
+                          <li>4</li>
+                          <li>5</li>
+                      </ul>
+                  </div>
+             </ul>
+              
+              </div>
+              <span class="arrowLeft sec1Arr"></span>
+          </div>
+          <div class="center sec1Txt">
+             <ul>
+                 <li> <p class="sec1TxtTop">
+                  Award Collection <br>
+Chefs·Food Writers
+              </p>
+              <p class="sec1TxtUnder">
+               권위있는 쿡북 Award Collection과 유명 셰프/푸드라이터의 저서를 모아놓은 Chefs·Food Writers 컬렉션
+              </p></li>
+<!--
+                 <li> <p class="setTxtTop">
+                 Ingredients House
+              </p>
+              <p class="setTxtUnder">
+                 190여 종의 스파이스 & 허브, 소금, 오일을 오감으로 체험하는 공간
+              </p></li>
+                 <li> <p class="setTxtTop">
+                  Untitled2013 (How to Cook a Wolf)
+              </p>
+              <p class="setTxtUnder">
+              Artwork 1 - Untitled2013 (How to Cook a Wolf)
+              </p></li>
+                 <li> <p class="setTxtTop">
+                  Mind Over Matter
+              </p>
+              <p class="setTxtUnder">Artwork 2 - Mind Over Matter
+              </p></li>
+                 <li> <p class="setTxtTop">
+                 Kitchen I & II
+              </p>
+              <p class="setTxtUnder">
+               쿠킹 클래스와 셀프 쿠킹이 진행되는 2개의 부엌
+              </p></li>
+-->
+             </ul>
+          </div>
+          <span class="secBox">HIGHLIGHT SPOT 모두 보기 ></span>
+      </div>
+       <div class="section sec6">
+          <div class="TopTxt">
+              <h1>COOKING PROGRAM</h1>
+              <h2>지식과 영감을 공유하는 쿠킹 클래스와 셀프쿠킹
+</h2>
+          </div>
+          <ul class="center gallerySec6">
+          <li class="box1Sec6">
+                  <div class="gallSec6 "></div>
+                  <div class="contentSec6">
+                  <div class="txtSec6">
+                   <p class="txt1Sec6">Artist's CookbookⅡ</p>
+                   <p class="txt2Sec6">Artist's CookbookⅡ</p>
+                   <p class="txt3Sec6">
+                       [ 2018.03.15 ~ 2018.04.01 ]
+                   </p>
+                   </div>
+                   </div>
+       </li>
+                  <li class="box2Sec6">
+                   <div class="gallSec6 num2Sec6"></div>
+                   <div class="contentSec6">
+                   <div class="txtSec6">
+                   <p class="txt1Sec6">홍콩 미식 여행</p>
+                   <p class="txt2Sec6">홍콩 미식 여행</p>
+                   <p class="txt3Sec6">
+                     [ 2018.03.27 19:00~21:00 ]
+                   </p>
+                       </div>
+                      </div>
+         </li>
+          </ul>
+          <span class="secBox">COOKING PROGRAM 모두 보기 ></span>
+      </div>
+      <div class="section sec2">
+          <div class="TopTxt">
+              <h1>SOCIAL</h1>
+               <h2>인스타그램 속 #현대카드쿠킹라이브러리</h2>
+          </div>
+          <div class="sec2Gallery">
+          <ul>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+          </ul>
+<!--
+          <ul>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+          </ul>
+          <ul>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+          </ul>
+-->
+     </div>
+      </div>
+      <div class="section sec3">
+          <div class="TopTxt">
+              <h1>전문가의 도서/음반 가이드</h1>
+              <h2>분야별 전문가들이 추천하는 도서와 음반을 소개합니다.</h2>
+          </div>
+          <div class="center gallery sec3gall">
+            <div class="media">
+               <ul>
+                   <li>
+                   <div class="sec3Content">
+                       <p class="txt1Sec3">세계 속의 숨은 맛집 찾기</p>
+                       <p class="txt2Sec3">2018년 03월</p>
+                       <p class="txt3Sec3">해외 여행할 때 레스토랑 정보를 얻는 법.</p>
+                       <p class="txt4Sec3">이욱정 PD</p>
+                   </div></li>
+<!--
+                   <li>
+                        <div class="sec3Content">
+                       <p class="txt1Sec3">영혼의 맛, 빵</p>
+                       <p class="txt2Sec3">2018년 02월</p>
+                       <p class="txt3Sec3">매일의 식사와 흥겨운 축제에 빠지지 않는 인류의 음식, 빵</p>
+                       <p class="txt4Sec3">이욱정 PD</p>
+                   </div>
+                   </li>
+                   <li>
+                        <div class="sec3Content">
+                       <p class="txt1Sec3">요리는 여행이다</p>
+                       <p class="txt2Sec3">2018년 01월</p>
+                       <p class="txt3Sec3">쿠킹 책으로 세계를 여행하는 법</p>
+                       <p class="txt4Sec3">이욱정 PD</p>
+                   </div>
+                   </li>
+                   <li>
+                        <div class="sec4Content">
+                       <p class="txt1Sec3">나의 인생, 나의 요리</p>
+                       <p class="txt2Sec3">2017년 12월</p>
+                       <p class="txt3Sec3">미식 평론 입문을 위한 자전적 쿠킹 책</p>
+                       <p class="txt4Sec3">이욱정 PD</p>
+                   </div>
+                   </li>
+-->
+               </ul>                  
+                </div>
+                <span class="arrowRight Sec3Arr"></span>
+                 <span class="arrowLeft Sec3Arr"></span>
+            </div>           
+          <span class="secBox">도서/음반 가이드 전체 보기</span>
+           </div>
+      <div class="section sec4">
+          <div class="TopTxt">
+              <h1>BOOKS</h1>
+              <h2>레시피 이상의 지적 경험을 선사하는 쿠킹책</h2>
+          </div>
+          <div class="sec4Box1">
+             <ul class="sec4content">
+              <li class="sec4contentLeft">
+                  <p class="sec4Toptxt">3개월 동안 많이 열람한 도서 </p>
+                      <div class="book">
+                          <img src="img/CB0000003862.jpg" alt="x">
+                      </div>
+                      <p class="sec4Under">플레이팅의 기술</p>
+<!--
+                      <li>
+                      <div class="book"></div>
+                     <p class="sec4Under">제주맛집</p>
+                      </li>
+                      <li>
+                      <div class="book"></div>
+                      <p class="sec4Under">The Beer Book</p>
+                      </li>
+                      <li>
+                      <div class="book"></div>
+                      <p class="sec4Under">프로를 위한 파스타의 기술</p>
+                      </li>
+                      <li>
+                      <div class="book"></div>
+                      <p class="sec4Under">도쿄 컬트 레시피</p>
+                      </li>
+-->
+              </li>
+              <li class="sec4contentRight">
+                <div class="sec4Num1"><p class="num">1 </p><p class="m">        플레이팅의 기술</p>   <p>Machiyama Chih...</p></div> 
+<!--
+                      <div class="sec4Num2"> <li> <p class="num">2</p><p class="m">         제주맛집</p><p class="final">이담</p></div> 
+                      <div class="sec4Num3"> <p class="num">3</p><p class="m">  THe Beer Book</p><p class="final">Tim Hampson</p></div> 
+                      <div class="sec4Num4">  <p class="num">4</p><p class="m">   프로를 위한 파스타의 기술</p><p class="final">니시구치 다이스케</p></div> 
+                      <div class="sec4Num5">  <p class="num">5</p><p class="m">   도쿄 컬트 레시피</p><p class="final">무로타 마오리 지음.</p></div> 
+-->
+              </li>
+              </ul>
+          </div>
+          <div class="sec4Box2">
+              <ul class="center sec4top">
+                  <li>New | 신규 도서   <div class="sec4Bar"></div></li>
+               
+                  <li>Essential | 추천 도서<div class="sec4Bar2"></div></li>
+                  
+              </ul>
+              
+              
+              <ul class="center sec4mid">
+              <li class="aboutBook">
+                <div class="sec4M sec4content2Right"><img class="backbook"src="img/CB0000010194.jpg" alt="x"><img class="mainbook" src="img/CB0000010194.jpg" alt="x"></div>
+                 <div class="sec4M sec4content2Left">
+                   <div class="sec4content2LeftContent"></div>
+                    <p class="sec4Top2">칼, 나이프</p>
+                    <p class="sec4Mid2">전 세계의 주방 한편을 장식하고 있는 '나이프 컬렉션'에 대한 이야기를 담은 책이다. 칼은 위험하지만 늘 집 안에 놓아두는 없어서는 안 될 조리도구이다. 최첨단 철강기술로 만든 세계적인 브랜드의 칼을 비롯해 처음부터 끝까지 장인의 손끝에서 완성되는 칼까지, 저마다 특별한 이야기를 지닌 40종류의 매혹적인 칼에 대해 소개한다.</p>
+                    <div class="sec4UnderMain">
+                    <div class="sec4Under2">
+                        저자/역자<span class="sec4Writer">팀 헤이워드</span>   </div>
+                     <div class="sec4Under3">  출판사<span class="sec4Writer"> 그린쿡</span></div>
+                  </div>
+                  </div>
+                  </li>
+<!--
+              <li class="aboutIcon">
+                 <div class="sec4M  sec4content2Right"></div>
+                   <div class="sec4M sec4content2Left">
+                    <p class="sec4Top2">40 Years of Chez Panisse</p>
+                    <p class="sec4Mid2">셰프 Alice Waters와 레스토랑 셰 파니스(Chez Panisse)의 여정을 담은 책. 1971년부터 소박하게 시작한 레스토랑은 근교에서 재배한 유기농 재료만 사용하며 지역 농민의 커뮤니티를 만들어왔다. 이 책은 시간 여행을 통해 지속 가능한 음식 문화를 이끈 셰 파니스와 Waters에게 영감을 준 사람, 그리고 장소에 얽힌 추억을 되살려주는 사진과 수필을 함께 담고 있다.
+</p>
+                    <p class="sec4Under2">
+                        저자/역자    Alice Waters and friends ; foreword by Calvin Trillin ; afterword by Michael Pollan<br>
+                         출판사      Clarkson Potter
+                    </p> 
+                    </div>
+              </li>
+-->
+              </ul>
+              <ul class="sec4round">
+                  <li><span></span></li>
+                  <li><span></span></li>
+              </ul>        
+          <span class="center secBox">BOOKS 모두 보기 ></span>
+          </div>
+      </div>
+      <div class="section sec5">
+         <div class="center mainContentSec5">
+        <div class="TopTxtsec5">
+          	<p>Theme Special <span>| 테마 스페셜</span></p>
+          </div>
+           	<div class="center gall">
+           		<div class="media"></div>
+           			<div class="txt">
+           			<div class="txtContent"><P>Artist's Cookbook</P>
+           				<P>예술가의 쿡북    ~</P></div>	
+           			</div>
+           		
+           	</div>
+           	 <span class="center secBox">COLLECTION 모두 보기 ></span>    
+           	</div>
+		</div>
+           	 <div class="section sec5_2">
+         <div class=" mainContentSec5">
+           <div class="TopTxt">
+          		<h1>DELI</h1>
+          	<h2>캐주얼 다이닝 델리와 함께 카페, 숍을 경험할 수 있는 공간</h2>
+          </div>
+           	<div class="gall">
+           		
+           	</div>
+           	<span class="center secBox">DELI 전체보기 ></span>       
+           	</div>
+		</div>
+           	 <div class="section sec5_3">
+         <div class=" mainContentSec5">
+          <div class="TopTxt">
+          	<h1>GREENHOUSE</h1>
+          	<h2>옥상의 그린하우스에서 여유롭게 즐기는 유럽식 프라이빗 다이닝</h2>
+          </div>
+           	<div class="gall"></div> 
+           	<span class="center secBox">GREENHOUS 전체보기 ></span>      
+           	</div>
+      </div>
+      <div class="section sec7">
+          <div class="TopTxt">
+              <h1>VIDEO CLIPS</h1>
+              <h2>영상으로 만나는 디자인 라이브러리</h2>
+          </div>
+          <div class="content center">
+              <ul>
+                  <li>
+                      <p class="sec7Txt1">| LIBRARY TALK 05. Inspiration Week : Tartine Bakery with Chad Robertson</p>
+                      <p class="sec7Txt2">쿠킹 라이브러리의 맛있는 토크 : 타르틴 베이커리 창립자 채드 로버트슨</p>
+                     <iframe width="1000" height="700" src="https://www.youtube.com/embed/Y8f7auk5Gew" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                  </li>
+                  <li>
+                      <p class="sec7Txt1">| Inspiration TALK 03.Inspiration Week : Cooking Library</p>
+                       <p class="sec7Txt2">영감을 공유한느 라이브러리에서의 1주일 : 칼럼니스크 황교익</p>
+                  </li>
+                  <li>
+                      <p class="sec7Txt1">| SELF COOKING 10. 돼지 안심 미니 웰링턴</p>
+                       <p class="sec7Txt2">돼지 안심을 노릇노릇 구워 각종 채소와 치즈를 파이 도우안에 넣은 미니 웰링턴</p>
+                  </li>
+              </ul>
+              <span class="arrowRight sec8Arr"></span>
+              <span class="arrowLeft sec8Arr"></span>
+          </div>
+          <span class="secBox">VIDEO CLIPS 모두 보기 ></span>
+      </div>
+      <div class="section sec8">
+         <div class="overlapSec8">
+          <div class="TopTxt">
+              <h1>VISIT</h1>
+              <h2>이용 안내</h2>
+          </div>
+          <div class="nextSec8 map">
+              <div class="location"></div>
+              <p class="txtSec8">서울시 강남구 압구정로46길 46 <br>
+T 02-513-2900 <br>
+E cookinglibrary@hcs.com</p>
+          </div>
+          <div class="nextSec8 txtSec8Top">
+              <p class="txtSec8main">오늘의 운영 시간</p> <br>
+              <p class="txtSec8mainBig">PM 12:00 ~ PM 06:00</p>
+              <p class="txtSec8main">Membership</p> <br>
+               <p class="txtSec8under">
+              회원 본인 및 동반 2인 무료 입장 <br>
+만 19세 이상, 월 8회 한정
+<br><br>
+현대카드 회원 전용(무기명 법인카드 및 Gift카드 제외)
+             <br>
+              연령 및 본인 확인을 위해 본인 및 동반인 신분증 지참
+              <br>
+회원 본인 동반 없이 비회원 입장 불가
+<br>
+본인 입장 횟수 및 동반 2인 초과 시 Library 입장 불가
+<br>
+쾌적한 열람을 위해 동시 열람인원 50명 제한(대기 입장 가능)
+          </div>
+          <span class="secBox">VISIT 전체보기 ></span>
+          </div>
+      </div>
+      
+    <div class="footer">
+        <div class="ftop">
+            <ul>
+                <li>NOTICE　　　</li>
+                <li><a href="#">ㅣ　　2018.02.14  [ Library Home ]  현대카드 LIBRARY 설연휴 휴관 안내　　></a></li>
+                <li class="line"></li>
+            </ul>
+        </div>
+        <div class="btop">
+            <ul>
+                <li class="img"><img src="img/foot_logo.png" alt=""></li>
+                <li class="txt1">서울특별시 영등포구 의사당대로3 현대캐피탈빌딩 | 대표이사 정태영</li>
+                <li class="txt2">사업자등록번호 213-86-15419 ⓒ HYUNDAI CARD Corp</li>
+                <li class="box">
+                    <a href="">패밀리</a>
+                    <span class="icon"></span>
+                </li>
+            </ul>
+
+        </div>
+
+    </div>
+    </div>  
+    
+    <script>
+        var userYear = (document.getElementsByName(userYear)[0]);
+        var userMonth = (document.getElementsByName(userMonth)[0]);
+        var userDate = (document.getElementsByName(userDate)[0]);
+
+
+
+        // Get the modal
+
+
+        var modalLogin = document.getElementById('modal_login');
+        var modalRegi = document.getElementById('modal_register');
+        // Get the button that opens the modal
+        var loginBtn = document.getElementById("loginBtn");
+        var RegiBtn = document.getElementById("regiBtn");
+        // Get the <span> element that closes the modal
+        var closeLogin = document.getElementsByClassName("close_btn_login")[0];
+        var closeRegi = document.getElementsByClassName("close_btn_regi")[0];
+
+        // When the user clicks on the button, open the modal 
+        loginBtn.onclick = function() {
+            modalLogin.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modalLogin) {
+                modalLogin.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, open the modal 
+        regiBtn.onclick = function() {
+            modalRegi.style.display = "block";
+            modalLogin.style.display = "none";
+        }
+
+        closeLogin.onclick = function() {
+
+            modalLogin.style.display = "none";
+        }
+        closeRegi.onclick = function() {
+            modalRegi.style.display = "none";
+
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modalRegi) {
+                modalRegi.style.display = "none";
+                modalLogin.style.display = "none";
+            }
+        }
+
+    </script>
+
+</body>
+</html>

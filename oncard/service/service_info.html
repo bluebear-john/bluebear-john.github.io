@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<title>온카드</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="../css/font.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+	<script src="../js/jquery-latest.min.js"></script>
+
+</head>
+
+<body>
+	<div id="wrap">
+	<!--fixed quick menu-->
+		<div class="quick_menu">
+			<ul>
+				<li class="request"><img src="../img/quick01.png" alt=""><p>상담신청<br>바로가기</p></li>
+			<li class="example"><img src="../img/quick02.png" alt=""><p>업종별<br> 이용사례
+					</p></li>
+				<li class="realtime"><img src="../img/quick03.png" alt=""><p>실시간<br>상담톡</p></li>
+				<li class="onetoone"><img src="../img/quick05.png" alt=""><p>1대1<br>상담하기</p></li>
+			</ul>
+		</div>
+<div class="myslidenav_wrap">
+		<div id="mySidenav" class="sidenav">
+			<div href="javascript:void(0)" class="closebtn" ><img src="../img/exitbtn.png" alt="닫기"></div>
+	<a role="button" class="accor_btn">
+                <i class="fa fa-credit-card" aria-hidden="true"></i> 온카드
+                <div class="detail_m">
+                <a href="../intro/history.html"><i class="fa fa-angle-right" aria-hidden="true"></i>회사연혁</a>
+                <a href="../intro/comp_ser.html"><i class="fa fa-angle-right" aria-hidden="true"></i>회사서비스</a>
+                <a href="../intro/direction.html"><i class="fa fa-angle-right" aria-hidden="true"></i>오시는 길</a>
+                </div>
+		</a>
+		<a role="button" class="accor_btn">
+	    		<i class="fa fa-magic" aria-hidden="true"></i> 수기결제
+		    	<div class="detail_m">
+			    <a href="../hpayment/hpayment.html"><i class="fa fa-angle-right" aria-hidden="true"></i>수기결제란?</a>
+	            </div>
+	    </a>
+        <a role="button" class="accor_btn">
+                <i class="fa fa-laptop" aria-hidden="true"></i> 온라인결제 
+                <div class="detail_m">
+                <a href="../shopmall/shopmall.html"><i class="fa fa-angle-right" aria-hidden="true"></i>일반쇼핑몰</a>
+                <a href="../shopmall/sns.html"><i class="fa fa-angle-right" aria-hidden="true"></i>SNS결제</a>
+                </div>
+        </a>
+        <a role="button" class="accor_btn">
+                <i class="fa fa-handshake-o" aria-hidden="true"></i>부가서비스
+                <div class="detail_m">
+                <a href="../cpay/paylog.html"><i class="fa fa-angle-right" aria-hidden="true"></i>PAYLOG</a>
+                <a href="../cpay/c_pay.html"><i class="fa fa-angle-right" aria-hidden="true"></i>C-PAY</a>
+                </div>
+        </a>
+        <a role="button" class="accor_btn">
+                <i class="fa fa-handshake-o" aria-hidden="true"></i>업종별서비스
+                <div class="detail_m">
+                <a href="../example/example.html"><i class="fa fa-angle-right" aria-hidden="true"></i>업종별서비스</a>
+                </div>
+        </a>
+        <a role="button" class="accor_btn">
+                 <i class="fa fa-bookmark" aria-hidden="true"></i> 고객센터
+                 <div class="detail_m">
+                 <a href="../info/faq.html"><i class="fa fa-angle-right" aria-hidden="true"></i>FAQ</a>
+                 <a href="../info/download.html"><i class="fa fa-angle-right" aria-hidden="true"></i>자료다운로드</a>
+                 </div>
+        </a>
+        <a role="button" class="accor_btn">
+                <i class="fa fa-pencil-square-o" aria-hidden="true"></i>서비스신청
+                <div class="detail_m">
+                <a href="service_info.html"><i class="fa fa-angle-right" aria-hidden="true"></i>서비스안내</a>
+                <a href="service_request.html"><i class="fa fa-angle-right" aria-hidden="true"></i>신청서</a>
+                <a href="resell_request.html"><i class="fa fa-angle-right" aria-hidden="true"></i>리셀러대리점모집</a>
+            
+        </div>
+        </a>
+	</div></div>
+	<div class="mySideBack" style="width: 100%;height: 100%;background-color: rgba(0, 0, 0, 0.74);position:fixed; top:0px;right:0px;display: none;z-index: 15"></div>
+
+	<div class="category_menu_wrap">
+		<div class="category_menu">
+			<div class="cate_title_box">
+				<h3 class="cate_title">전체메뉴</h3>
+				<div class="close_btn"><img src="../img/exitbtn.png" alt=""></div>
+			</div>
+			<div class="cate_menu_box">
+	<ul class="clearfix">
+					<li>
+						<a href="../index.html" class="cate_top">온카드</a>
+						<a href="../intro/history.html">회사연혁</a>
+						<a href="../intro/comp_ser.html">서비스</a>
+						<a href="../intro/direction.html">오시는길</a> <a href="#">&nbsp;</a>
+
+					</li>
+					<li>
+						<a href="../hpayment/hpayment.html" class="cate_top">수기결제</a>
+						<a href="../hpayment/hpayment.html">수기결제란</a>
+						<a>&nbsp;</a>
+						<a>&nbsp;</a>
+						<a>&nbsp;</a>
+
+					</li>
+					<li>
+						<a href="../shopmall/shopmall.html" class="cate_top">온라인결제</a>
+						<a href="../shopmall/shopmall.html">일반쇼핑몰</a>
+						<a href="../shopmall/sns.html">SNS결제</a>
+						<a>&nbsp;</a>
+						<a>&nbsp;</a>
+					</li>
+					<li>
+						<a href="../cpay/paylog.html" class="cate_top">부가서비스</a>
+						<a href="../cpay/paylog.html">PAYLOG</a>
+						<a href="../cpay/c_pay.html">C-PAY</a>
+						<a>&nbsp;</a>
+						<a>&nbsp;</a>
+					</li>
+					<li>
+						<a href="../example/example.html" class="cate_top">업종별이용사례</a>
+						<a href="../example/example.html">업종별이용사례</a>
+						<a>&nbsp;</a>
+						<a>&nbsp;</a>
+						<a>&nbsp;</a>
+
+					</li>
+					<li>
+						<a href="../info/faq.html" class="cate_top">고객센터</a>
+						<a href="../info/faq.html">FAQ</a>
+						<a href="../info/board.php.html">게시판</a>
+						<a href="../info/download.html">자료다운로드</a>
+						<a>&nbsp;</a>
+
+					</li>
+					<li>
+						<a href="service_info.html" class="cate_top">서비스신청</a>
+						<a href="service_info.html">서비스안내</a>
+						<a href="service_request.html">신청서</a>
+						<a href="resell_request.html">리셀러대리점모집</a>
+						
+					</li>
+				</ul>
+
+			</div>
+		</div>
+	</div>
+	<div id="header">
+		<div class="head_top_navWrap">
+			<div class="head_top_nav clearfix">
+				<div class="tell_wrap">
+					<a href=""><i class="fa fa-phone-square" aria-hidden="true"></i>대표번호 1877-8599</a>
+					<a href=""><i class="fa fa-phone-square" aria-hidden="true"></i>직통번호 070-4501-4501</a>
+					<a href=""><i class="fa fa-phone-square" aria-hidden="true"></i> 24시간 070-8244-2162</a>
+				</div>
+				<div class="top_links">
+					<a href="">FAQ</a>
+					<a href="">리셀러/대리점모집</a>
+					<a href="">서비스안내</a>
+					<a href="" class="service">상담신청</a>
+				</div>
+			</div>
+		</div>
+			<div class="gnb">
+			<div class="gnb_area">
+				<h1 class="_logo"><a href="../index.html">온카드로고</a></h1>
+				<ul class="clearfix">
+					<li>
+						<a role="button" href="../intro/history.html" class="drop_btn">온카드</a>
+						<div class="drop_menu_wrap">
+							<a href="../intro/history.html">회사연혁</a>
+							<a href="../intro/comp_ser.html">회사서비스</a>
+							<a href="../intro/direction.html">오시는길</a>
+						</div>
+					</li>
+					<li>
+						<a role="button" href="../hpayment/hpayment.html" class="drop_btn">수기결제</a>
+						<div class="drop_menu_wrap">
+							<a href="../hpayment/hpayment.html">수기결제</a>
+
+						</div>
+					</li>
+					<li>
+						<a role="button" href="../shopmall/shopmall.html" class="drop_btn">온라인결제</a>
+						<div class="drop_menu_wrap">
+							<a href="../shopmall/shopmall.html">일반쇼핑몰</a>
+							<a href="../shopmall/sns.html">SNS결제</a>
+
+						</div>
+					</li>
+					<li>
+						<a role="button" href="../cpay/paylog.html" class="drop_btn">부가서비스</a>
+						<div class="drop_menu_wrap">
+							<a href="../cpay/paylog.html">PAYLOG</a>
+							<a href="../cpay/c_pay.html">C-PAY</a>
+
+						</div>
+					</li>
+					<li>
+						<a role="button" href="../example/example.html" class="drop_btn">업종별이용사례</a>
+						<div class="drop_menu_wrap">
+							<a href="../example/example.html">업종별이용사례</a>
+
+						</div>
+					</li>
+					<li>
+						<a role="button" href="../info/faq.html" class="drop_btn">고객센터</a>
+						<div class="drop_menu_wrap">
+							<a href="../info/faq.html">FAQ</a>
+							<a href="../info/board.php.html">게시판</a>
+							<a href="../info/download.html">자료다운로드</a>
+						</div>
+					</li>
+					<li>
+						<a role="button" href="http://ffe400.com/oncard/service/ervice_info.html" class="drop_btn">서비스신청</a>
+						<div class="drop_menu_wrap">
+							<a href="service_info.html">서비스안내</a>
+							<a href="service_request.html">신청서</a>
+							<a href="resell_request.html">리셀러대리점 모집</a>
+							<a href="http://ffe400.com/oncard/service/personal.html">개인정보취급방침</a>
+						</div>
+					</li>
+
+				</ul>
+				<div class="category pc">
+					<button><i class="fa fa-bars" aria-hidden="true"></i><span>카테고리</span></button>
+				</div>
+				<div class="category mo openNav" >
+					<button><i class="fa fa-bars" aria-hidden="true"></i><span>카테고리a</span></button>
+				</div>
+			</div>
+		</div></div>
+		<!--		컨텐츠영역시작.	-->
+<div id="container">
+	<div class="main_sec_wrap a service">
+	
+		<div class="main_sec">
+			<div class="main_txt_wrap a">
+				<div class="main_line"></div>
+				<p class="main_t">Integrated Payment System</p>
+				<h2 class="main_text">온카드</h2>
+				
+			</div>
+	</div>
+	</div><div class="b_menu_wrap">
+	<div class="b_menu center">
+		<a href="../index.html" class="b_home"><i class="fa fa-home"></i>home</a>
+		<a href="http://ffe400.com/oncard/service/history.html" class="b_home"><i class="fa fa-angle-right"></i>온카드</a>
+		<a href="http://ffe400.com/oncard/service/comp_ser.html" class="b_home"><i class="fa fa-angle-right"></i>온카드서비스</a>
+	</div>
+	</div>
+		
+		<div class="contents">
+			 <div class="cont_sec1">
+			 	<div class="con_line"></div>
+			 		<h4 class="cont_txt">서비스 안내</h4>
+		 				
+	 	<h4 class="cont_txt a">가입/비용 조건 안내</h4>
+			 				<table id="customers">
+								<tr>
+									<th></th>
+									<th>타사</th>
+									<th class="oncard">(주)온카드텔레페이</th>
+								</tr>
+								<tr>
+									<td>초기세팅비</td>
+									<td>10~20만원</td>
+									<td>4~10만원</td>
+								</tr>
+								<tr>
+									<td>호스팅비</td>
+									<td>월6,000원 이상</td>
+									<td>월5,000원</td>
+								</tr>
+								<tr>
+									<td>카드수수료</td>
+									<td>3.2%~</td>
+									<td>업종별 최저수수료</td>
+								</tr>
+								<tr>
+									<td>정산주기</td>
+									<td>D+7</td>
+									<td>D+5</td>
+								</tr>
+								<tr>
+									<td>보증보험료</td>
+									<td>[1.271%]
+									서울보증보험<br>
+									1년에 1번/500만원 기준<br>
+									63.550원</td>
+									<td>[1.589%]
+									서울보증보험<br>
+									1년에 1번/500만원 기준<br>
+									79.450원</td>
+								</tr>
+							
+				 </table>
+				 
+				 	 		<h4 class="cont_txt a">가입/비용 조건 안내</h4>
+			 				<table id="customers">
+								<tr>
+									<th></th>
+									<th>타사</th>
+									<th class="oncard">(주)온카드</th>
+								</tr>
+								<tr>
+									<td>초기세팅비</td>
+									<td>10~20만원</td>
+									<td>4~10만원</td>
+								</tr>
+								<tr>
+									<td>호스팅비</td>
+									<td>월6,000원 이상</td>
+									<td>월5,000원</td>
+								</tr>
+								<tr>
+									<td>카드수수료</td>
+									<td>3.2%~</td>
+									<td>업종별 최저수수료</td>
+								</tr>
+								<tr>
+									<td>정산주기</td>
+									<td>D+7</td>
+									<td>D+5</td>
+								</tr>
+								<tr>
+									<td>보증보험료</td>
+									<td>[1.271%]
+									서울보증보험<br>
+									1년에 1번/500만원 기준<br>
+									63.550원</td>
+									<td>[1.589%]
+									서울보증보험<br>
+									1년에 1번/500만원 기준<br>
+									79.450원</td>
+								</tr>
+							
+				 </table>	 		 	
+			 	</div>
+			</div>
+	</div>
+
+	
+		<!--		footer시작-->
+		<div id="footer">
+			<div class="f_sec1_wrap">
+				<div class="f_sec1">
+					<span class="fbox">도움이<br>필요하신가요?</span>
+					<ul>
+						<li>
+							<p class="oncard">CS center</p>
+							<p class="oncard" style="color:#ff9108">1566-6677</p>
+						</li>
+						<li>
+							<p><span class="letter">24시간</span> 070-8244-2162</p>
+							<p>직통번호 070-4501-4501</p>
+
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="f_sec2_wrap">
+				<div class="f_sec2 clearfix">
+					<ul>
+						<li><a href="#">회사소개</a></li>
+						<li><a href="#">오시는길</a></li>
+						<li><a href="#">채용안내</a></li>
+						<li><a href="#">사업자정보확인</a></li>
+
+					</ul>
+
+					<div class="site_map">전체 사이트 맵</div>
+
+
+				</div>
+			</div>
+			<div class="f_sec3_wrap">
+				<div class="f_sec3">
+					<p>(주) 온카드</p>
+					<p>(주)온카드 ㅣ 대표자 : 신문기<br> 회사주소 : 경기도 부천시 안곡로 209, 3층(괴안동)<br> 사업자등록증 : 130-86-66758 | 부가통신사업 신고번호 : 제 2-01-15-0153 호<br> </p>
+					<div class="icon_wrap">
+						<div class="f_icon"></div>
+						<div class="f_icon"></div>
+						<div class="f_icon"></div>
+					</div>
+				</div>
+			</div>
+
+
+		</div>
+	</div>
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+            panel.style.display = "none";
+        } else {
+            panel.style.display = "block";
+        }
+    });
+}
+</script>
+	
+	<script src="../js/my_script.js"></script>
+</body>
+
+</html>
