@@ -11,6 +11,11 @@
     <link href="http://fonts.googleapis.com/earlyaccess/notosanskr.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 
+   <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+   <!-- Style The Contact Form How Ever You Prefer -->
+   <link rel="stylesheet" href="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/style.css">
+
 </head>
 
 <body>
@@ -37,48 +42,54 @@
 					<li><a href="https://www.linkedin.com/in/bluebears"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
 					<li><a href="https://www.instagram.com/ryan_blue_jeon/"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
 				</ul>
-			</div>
-			<p>최대한 빠른시일내에 답변드리겠습니다 :)</p>
 		</div>
 
+<!-- START HERE -->
 <div class="form_wrap ">
-  <form id="gform" action="https://script.google.com/macros/s/AKfycbxJIFvyRdlThabgtcdiG9TWFaCkby3ezZ_KpbHMow/exec" method="post">
- 
-    <fieldset>
-      <input placeholder="Your name" type="text" name="name" value="" tabindex="1" autofocus>
-      <span class="error"></span>
-    </fieldset>
-    <fieldset>
-      <input placeholder="Your Email Address" type="text" name="email" value="" tabindex="2">
-      <span class="error"></span>
-    </fieldset>
-    <fieldset>
-      <input placeholder="Your Phone Number" type="text" name="phone" value="" tabindex="3">
-      <span class="error"></span>
-    </fieldset>
-    <fieldset>
-      <input placeholder="Your Web Site starts with http://" type="text" name="homepage" value="" tabindex="4">
-      <span class="error"></span>
-    </fieldset>
-    <fieldset>
-      <textarea value="" name="message" tabindex="5">
-      </textarea>
-    </fieldset>
-    <fieldset>
-      <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+
+  <form id="gform" method="post" class="pure-form pure-form-stacked" action="https://script.google.com/macros/s/AKfycbxJIFvyRdlThabgtcdiG9TWFaCkby3ezZ_KpbHMow/exec">
+
+    <!-- change the form action to your script url -->
+    <fieldset class="pure-group">
+      <label for="name">Name: </label>
+      <input id="name" name="name" placeholder="What your Mom calls you" />
     </fieldset>
 
-    <div class="success">
-    </div>
+    <fieldset class="pure-group">
+      <label for="message">Message: </label>
+      <textarea id="message" name="message" rows="10"
+      placeholder="Tell us what's on your mind..."></textarea>
+    </fieldset>
 
-    <!-- Customise the Message people see when they submit the form -->
-    <div style="display:none;" id="thankyou_message">
-      <h2><em>Thanks</em> for contraction us!
-          We will get back to you soon!</h2>
-    </div>
+    <fieldset class="pure-group">
+      <label for="email"><em>Your</em> Email Address:</label>
+      <input id="email" name="email" type="email" value=""
+      required placeholder="your.name@email.com"/>
+      <span id="email-invalid" style="visibility:hidden">
+        Must be a valid email address</span>
+    </fieldset>
+
+    <fieldset class="pure-group">
+      <label for="color">Favourite Color: </label>
+      <input id="color" name="color" placeholder="green" />
+    </fieldset>
+
+    <button class="button-success pure-button button-xlarge">
+      <i class="fa fa-paper-plane"></i>&nbsp;Send</button>
+
   </form>
+
+ <!-- Customise the Thankyou Message People See when they submit the form: -->
+  <div style="display:none;" id="thankyou_message">
+    <h2><em>Thanks</em> for contacting us!
+      We will get back to you soon!</h2>
+  </div>
+
 </div>
-	</div>	
+	
+<!-- END -->
+
+
 
 	<footer>
 		<div class="footer_wrap">
@@ -88,8 +99,7 @@
 
 	</footer>
 
-	<script data-cfasync="false" type="text/javascript" src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js">
-	</script>
-
+  	<!-- Submit the Form to Google Using "AJAX" -->
+	<script data-cfasync="false" type="text/javascript" src='js/form.js'></script>
 </body>
 </html>
