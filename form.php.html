@@ -39,12 +39,11 @@
 				</ul>
 			</div>
 			<p>최대한 빠른시일내에 답변드리겠습니다 :)</p>
-			</div>
-		<div class="form_wrap ">
- 
+		</div>
+
+<div class="form_wrap ">
   <form id="gform" action="https://script.google.com/macros/s/AKfycbxJIFvyRdlThabgtcdiG9TWFaCkby3ezZ_KpbHMow/exec" method="post">
  
-    
     <fieldset>
       <input placeholder="Your name" type="text" name="name" value="" tabindex="1" autofocus>
       <span class="error"></span>
@@ -68,30 +67,29 @@
     <fieldset>
       <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
     </fieldset>
+
     <div class="success">
-          </div>
+    </div>
+
+    <!-- Customise the Message people see when they submit the form -->
+    <div style="display:none;" id="thankyou_message">
+      <h2><em>Thanks</em> for contraction us!
+          We will get back to you soon!</h2>
+    </div>
   </form>
 </div>
-		</div>	
+	</div>	
+
 	<footer>
 		<div class="footer_wrap">
 			<div class="f_sec">+82 10.4220.6419 | bluebears.john@gmail.com</div>
 			<div class="f_sec b">Copyright 2019. Bluebears All rights reserved.</div>
-
-
 		</div>
 
 	</footer>
 
-<!-- Customise the Message people see when they submit the form -->
-<div style="display:none;" id="thankyou_message">
-  <h2><em>Thanks</em> for contraction us!
-      We will get back to you soon!</h2>
-</div>
+	<script data-cfasync="false" type="text/javascript" src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js">
+	</script>
 
-  <script data-cfasync="false" type="text/javascript"
-src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js">
-
-  </script>
 </body>
 </html>
