@@ -2,9 +2,13 @@
 
 .p_wrap {
 	width: 100%;
-	height: auto;
-	background-color: #d3d3d3;
-	padding: 77px 0px 15px 0;
+	height: 100%;
+
+    	background-image: url("../img/sub_bg.jpg");
+    	background-repeat: repeat-y;
+    	background-size: cover;
+    	background-position: 50%;
+
 }
 
 #nnavbar {
@@ -57,3 +61,12 @@
 
 
 }
+
+h5{
+	color: #ffffff;
+}
+
+P{
+	color: #ffffff;
+}
+
