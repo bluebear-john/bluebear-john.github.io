@@ -55,7 +55,7 @@ body {
     width: 25%;
     float: left;
     display: block;
-    color: #2c2e65;
+    color: #161616;
     padding: 25px 0px;
 
     text-align: center;
@@ -68,11 +68,11 @@ body {
 
 
 #navbar a:hover {
-    color: #000000;
+    color: #e20000;
 }
 
 #navbar a.active {
-    border-bottom: 5px solid #2c2e65;
+    border-bottom: 5px solid #d30000;
 
 
 }
