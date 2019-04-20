@@ -65,7 +65,7 @@ function handleFormSubmit(event) {  // handles form submit withtout any jquery
         console.log(xhr.responseText);
         document.getElementById('gform').style.display = 'none'; // hide form
         document.getElementById('thankyou_message').style.display = 'block';
-	location.reload();
+	setTimeout("location.reload(true)", 5000);
         return;
     };
     // url encode form data for sending as post data

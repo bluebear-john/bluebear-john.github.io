@@ -52,6 +52,7 @@
 
 .form_wrap{width: 100%;max-width: 1200px;margin: auto}
 
+
 #gform {
 	padding:25px;
 	margin:  0;
@@ -99,6 +100,12 @@ fieldset {
 #gform input:focus, #gform textarea:focus {
 	outline:0;
 	border:1px solid #999;
+}
+
+.thankyou{
+	width: 100%;
+	max-width: 1200px;
+	margin: auto;
 }
 
 
