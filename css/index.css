@@ -191,6 +191,35 @@ p.text2 {
     font-weight: 100;
     margin: 20px 0;
 }
+
+
+footer{
+    width: 100%;
+    height: auto;
+    padding: 10px 0;
+    background-color :#082738;
+}
+.footer_wrap{
+    width: 98%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.f_sec{
+    width: 80%;
+    color: #fff;
+    text-align: center;
+    font-size: 12px;
+    padding:10px 0;
+    font-family:'Noto Sans KR';
+    margin: 0 auto;
+    letter-spacing: 0px;
+}
+.f_sec.b{
+    border-top: 1px solid rgba(255, 255, 255, 0.24);
+}
+
+
 /*animate_box*/
 #wrap_box {
     width: 100%;
@@ -290,33 +319,3 @@ p.text2 {
         font-size: 12px;
         font-family: 'Noto Sans KR';
     }
-
-p.text1 {display: inline-block;font-family: 'Noto Sans KR';color: #fff;font-weight: 100;font-size: 12px;}
-h1.text1 b {font-weight: 600;}
-h1.text1 {padding-top: 10px;font-size: 45px;line-height: 55px;}
-p.text2 {font-size: 12px;padding-top: 10px;}
-.main_button a {font-size: 10px;}
-.right_img {display: none;}
-.button_wrap{display: none;}
-#navbar a.aboutmo{display: block;color:transparent }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

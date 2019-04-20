@@ -1,12 +1,130 @@
+#nnavbar {
+	width: 100%;
+
+	background-color: rgba(255, 254, 254, 1);
+	left: 50%;
+	transform: translateX(-50%);
+	transition: all 0.5s;
+	height: 65px;
+	box-shadow: 1px 1px 5px rgba(85, 85, 85, 0.74);
+
+}
+
+.nnav {
+	position: fixed;
+	top: 0px;
+	z-index: 100;
+}
+
+#nnavbar .nnav_center {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 90%;
+	max-width: 500px;
+}
+
+
+
+#nnavbar a {
+	width: 25%;
+	float: left;
+	display: block;
+	color: #2c2e65;
+	padding: 25px 0px;
+
+	text-align: center;
+	text-decoration: none;
+	font-size: 14px;
+	font-family: 'Noto Sans KR';
+}
+
+#nnavbar a:hover {
+	color: #000000;
+}
+
+#nnavbar a.active {
+	border-bottom: 5px solid #2c2e65;
+
+
+}
+
+
 .form_wrap{width: 100%;max-width: 1200px;margin: auto}
-#gform {padding:25px;margin:  0}
-fieldset {width: 100%;border: medium none !important;margin: 0 0 10px;}
-#gform input[type="text"], #gform input[type="email"], #gform input[type="tel"], #gform input[type="url"], #gform textarea {width: 100%;border:1px solid #CCC;background:#FFF;margin:0 0 5px;padding:10px;}
-#gform input[type="text"]:hover, #gform input[type="email"]:hover, #gform input[type="tel"]:hover, #gform input[type="url"]:hover, #gform textarea:hover {transition:border-color 0.3s ease-in-out;border:1px solid #AAA;}
-#gform textarea {height:100px;resize:none;}
-#gform button[type="submit"] {cursor:pointer;width: 100%;border:none;background:#0CF;color:#FFF;margin:0 0 5px;padding:20px;font-size:15px;}
+
+#gform {
+	padding:25px;
+	margin:  0;
+}
+
+fieldset {
+	width: 100%;
+	border: medium none !important;
+	margin: 0 0 10px;
+}
+
+#gform input[type="text"], #gform input[type="email"], #gform input[type="tel"], #gform input[type="url"], #gform textarea {
+	width: 100%;
+	border:1px solid #CCC;
+	background:#FFF;
+	margin:0 0 5px;
+	padding:10px;
+}
+
+#gform input[type="text"]:hover, #gform input[type="email"]:hover, #gform input[type="tel"]:hover, #gform input[type="url"]:hover, #gform textarea:hover{
+	transition:border-color 0.3s ease-in-out;
+	border:1px solid #AAA;
+}
+
+#gform textarea {
+	height:100px;
+	resize:none;
+}
+
+#gform button[type="submit"] {
+	cursor:pointer;
+	width: 100%;
+	border:none;
+	background:#0CF;
+	color:#FFF;
+	margin:0 0 5px;
+	padding:20px;
+	font-size:15px;
+}
+
 #gform button[type="submit"]:hover {background:#09C;transition:background-color 0.3s ease-in-out;}
+
 #gform button[type="submit"]:active { box-shadow:inset 0 1px 3px rgba(0, 0, 0, 0.5); }
-#gform input:focus, #gform textarea:focus {outline:0;border:1px solid #999;}
-#gfrom
+
+#gform input:focus, #gform textarea:focus {
+	outline:0;
+	border:1px solid #999;
+}
+
+
+footer{
+    width: 100%;
+    height: auto;
+    padding: 10px 0;
+    background-color :#082738;
+}
+.footer_wrap{
+    width: 98%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.f_sec{
+    width: 80%;
+    color: #fff;
+    text-align: center;
+    font-size: 12px;
+    padding:10px 0;
+    font-family:'Noto Sans KR';
+    margin: 0 auto;
+    letter-spacing: 0px;
+}
+.f_sec.b{
+    border-top: 1px solid rgba(255, 255, 255, 0.24);
+}
 
