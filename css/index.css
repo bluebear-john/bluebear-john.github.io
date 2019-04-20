@@ -24,7 +24,7 @@ body {
 #navbar {
     width: 100%;
 
-    background-color: rgba(255, 254, 254, 0.50);
+    background-color: rgba(255, 254, 254, 1);
     left: 50%;
     transform: translateX(-50%);
     transition: all 0.5s;
@@ -55,7 +55,7 @@ body {
     width: 25%;
     float: left;
     display: block;
-    color: #161616;
+    color: #2c2e65;
     padding: 25px 0px;
 
     text-align: center;
@@ -66,20 +66,13 @@ body {
 
 
 #navbar a:hover {
-    color: #e20000;
+    color: #000000;
 }
 
 #navbar a.active {
-    border-bottom: 5px solid #d30000;
+    border-bottom: 5px solid #2c2e65;
 
 
-}
-
-.sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    max-width: 100%;
 }
 
 .main_wrap .main_h_line {
@@ -302,7 +295,6 @@ p.text1 {display: inline-block;font-family: 'Noto Sans KR';color: #fff;font-weig
 h1.text1 b {font-weight: 600;}
 h1.text1 {padding-top: 10px;font-size: 45px;line-height: 55px;}
 p.text2 {font-size: 12px;padding-top: 10px;}
-.sticky {position: fixed;top: 0;width: 100%;max-width: 100%;}
 .main_button a {font-size: 10px;}
 .right_img {display: none;}
 .button_wrap{display: none;}
