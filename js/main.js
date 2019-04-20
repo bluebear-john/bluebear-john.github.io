@@ -3,29 +3,9 @@
 
         };
 
-        var navbar = document.getElementById("navbar");
-        var sticky = navbar.offsetTop + 550;
         var content = document.getElementsByClassName('contents').offsetTop;
 
         var about = document.getElementsByClassName("about");
-
-        function myFunction() {
-            if (window.pageYOffset >= sticky) {
-                navbar.classList.add("sticky");
-                navbar.style.width = "100%";
-                navbar.style.maxWidth = "100%";
-                navbar.style.backgroundColor = "#fff";
- 
-
-            } else {
-                navbar.classList.remove("sticky");
-                navbar.style.width = "90%";
-                navbar.style.maxWidth = "1400px";
-                navbar.style.backgroundColor = "rgba(255, 254, 254, 0.90)";
-
-            }
-        }
-
 
         jQuery(document).ready(function() {
             var topLine = $('.top_line');
